@@ -8,22 +8,22 @@ def solution(genres, plays):
             dict_genre[gp[0]] += gp[1]
         else:
             dict_genre[gp[0]] = gp[1]
-    genre_priority = sorted(dict_genre, key= lambda x: x[1], reverse=True)
+    genre_priority = sorted(dict_genre.items(), key= lambda x: x[1], reverse=True)
     for genre in genre_priority:
         dict = {}
         for i in range(len(genre_play)):
-            if genre_play[i][0] == genre:
-                dict[genre_play[i][1]] = i
-        list_index = sorted(dict.items(), key=lambda x: x[0], reverse=True)
-        answer.append(list_index[0][1])
-        if len(list_index) > 2:
-            answer.append(list_index[1][1])
+            if genre_play[i][0] == genre[0]:
+                dict[i] = genre_play[i][1]
+        list_index = sorted(dict.items(), key=lambda x: x[1], reverse=True)
+        answer.append(list_index[0][0])
+        if len(list_index) >= 2:
+            answer.append(list_index[1][0])
 
     genre_play = sorted(genre_play, key=lambda x: x[0])
     return answer
 
 
-genres = ["classic"]
-plays = [500]
+genres = ["classic", "pop", "classic", "classic", "pop", "pop"]
+plays = [500, 2500, 150, 800, 2500, 3000]
 
 print(solution(genres, plays))
