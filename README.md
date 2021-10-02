@@ -10,15 +10,15 @@
 
 ## 진행 방식
 - 스터디 전 
-    - 각자 프로그래머스(https://programmers.co.kr/learn/challenges)에 나온 유형 문제 풀이
+    - 각자 프로그래머스(https://programmers.co.kr/learn/challenges) 에 나온 유형 문제 풀이
     - 깃의 각자 브랜치에 코드 및 풀이 푸시
     
 
 - 스터디(2시간) 
     - 줌으로 모여서 프로그래머스에서 어려웠던 점이나 다뤄보고 싶은 점 공유(30분)
-    - 백준 단계별로 풀어보기(https://www.acmicpc.net/step)에서 해당 유형 1-2문제 실시간 풀이(1시간) 
+    - 백준 단계별로 풀어보기(https://www.acmicpc.net/step) 에서 해당 유형 1-2문제 실시간 풀이(1시간) 
     - 각자 풀이 공유(20분) 
-    - 각자 코드 push하면 master  브랜치로 merge(10분)
+    - 각자 코드 push하면 master 브랜치로 merge(10분)
     
 ## Git
 
