@@ -47,5 +47,7 @@ def solution(number, k):
     return answer
 
 
-print(solution("10" , 1))
+#최종: 이게 생각보다 어려웠다.. 그리디라서 heapq를 쓸 필요가 없다고 생각했지만, 쓰고 잘 풀렸다.
+#하지만 stack을 사용해서 더욱 빠르게 풀 수 있는 방법이 있었다.
+#하지만 그 방법이 조금 납득하기 힘들다......
 
